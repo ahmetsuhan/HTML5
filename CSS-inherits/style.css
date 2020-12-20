@@ -1,0 +1,35 @@
+body{
+  color:brown;
+  font-size:20px;
+}
+ul{
+  color:red;
+  font-size: 15px;
+}
+
+ul li{
+  color:purple;
+}
+.orange{
+  color:orange !important;  /* importan yazdığında ezilmez.*/
+}
+
+#passive{
+  color:gray;
+  font-size: 55px;
+}
+/*a etiketi bir üst elemandan inherit almaz. üst elemanı üzerinden a yı değiştiremeyiz. */
+/* fakat inherit kavramı ile bir üstündeki elemnın özelliklerini almasını sağlayabiliriz.*/
+a{
+  /*color:red; yerine altakini yazarsak üstündeki elemana verilen özelliği alır.*/
+  color:inherit; /* a'nın üzerinde bulunan elemanın color özelliğini alır. */
+  font-size: 20px;
+}
+
+span{
+  color :red;
+  border:1px solid green;
+}
+#inherit span{
+  color:inherit;
+}
