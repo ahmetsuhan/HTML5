@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sıralı Listeler</title>
+  <meta name="title" content="Sıralı Listeler">
+  <meta name="keywords" content="Sıralı Liste,liste, sıralı ">
+  <meta name="description" content="Bu bölümde sıralı listeleri inceleyeceğiz.">
+</head>
+<body>
+
+  <h1>Sıralı Liste nasıl oluşturulur? </h1>
+  <hr>
+  <p>Sıralı Listeleri <b>ol</b> etiketi ile oluştururuz. ol ile oluşturulan liste içerisine eleman eklemek için ol etiketi içerisinde <strong>li</strong> etiketi yazılır ve her bir li etiketine istediğimizi yazabiliriz.(Yazı,resim,paragraf...)</p>
+  <p>Gelin aşağıdaki yatay çigiler arasında örnek bir liste oluşturalım ve içerisine eleman ekleyip bakalım nasıl olduğuna.</p>
+  <hr>
+  <ol>
+    <li>liste 1. </li>
+    <li>liste 2. </li>
+    <li>liste 3. </li>
+  </ol>
+  <hr>
+  <p>Yukarıdaki yatay çizgiler arasında görüyoruz ki sanki wordde madde işareti koayar gibi bizim liste içerisindeki elemanlarımızın başına madde işareti koyulmuş. Bu madde işaretinin şeklini değiştirebiliyoruz.<br>Bu listelere sıralı liste denilmesinin sebebi ise ardışık olarak berlirtilen bir liste olmasıdır.<br>Madde işareti olarak bahsettiğimiz kısma nuamralandırma yapılır.</p>
+  <p>Eğer siz gelip bu sayfada ögeyi denetle deyip li etiketlerine bakacak olursanız, üzerine geldiğimizde tüm satırı çiziyor. Bir html elemanının satırı olduğu gibi kaplaması demek bu etiketin bi blok etiketi olduğunu gösteriyor. Bir sonraki gelen eleman bir alt satırdan başlıyor.</p>
+<hr>
+<h2>Emmet aracılığı ile kısayoldan n tane liste elemanı oluşturmak:</h2>
+<p>Örnek olarak 5 tane liste elemanı oluşturmak için gelip her bir elemean için <b>ol</b> etiketi içerisinde <b>li</b> etiketi yazmak yerine gelip sadece ol>li*5 yazıp klavyeden tab tuşuna basarak 5 tane liste elemanı oluşturabiliriz.</p>
+<ol>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+<hr>
+
+<h2>Liste numaramı 1'den değil de n. numaradan başlatmak istiyorsam:</h2>
+<p>bunun için liste tagini tanımlanmış start attribute si var. Gelin bunu aşağıda kullanalım ve nasılmış görelim. Örnek olarak 10 elemanlı bir liste oluşturucam ve numaralandırmaya 10'dan başlayacak.</p>
+<ol start="10">
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+<hr>
+<h2>Listelerin Numarasına Sayıdan farklı bir şey vermek için:</h2>
+<p>Listelerin numaralandırma tipleri sadece sayı olmak zorunda değildir. bunun için ol tagine tanımlanmış type attributesi vardır.</p>
+<p>Öncelikle listemizi alfabetik harflerle bir sıraya sokalım:</p>
+<ol start="6" type="A">
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+
+<ol type="a">
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+
+<ol type="i">
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+<ol start="8" type="I">
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+  <li>eleman</li>
+</ol>
+<hr>
+<h2>İç içe liste örneği yapalım:</h2>
+<ol start="1" type="1">
+  <li>sayı ile listeleme. 1.den başlayan eleman</li>
+  <ol start="2" type="a">
+    <li>küçük harfle sıralama. 2. harften başlayan eleman</li>
+    <ol start="3" type="A">
+      <li>büyük harfle sıralama. 3. harften başlayan eleman</li>
+      <ol start="4" type="i">
+        <li>küçük romen rakamı ile sıralama. 4. sayıdan başlayan eleman</li>
+        <ol start="5" type="I">
+          <li>büyük ramen rakamı ile sıralama. 5. sayıdan başlayan eleman</li>
+        </ol>
+      </ol>
+    </ol>
+  </ol>
+  <li>eleman</li>
+</ol>
+</body>
+</html>

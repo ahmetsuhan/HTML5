@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tables</title>
+  <meta name="title" content="Tables">
+  <meta name="keywords" content="Tables,tablolar">
+  <meta name="description" content="Bu bölümde html5 tablolarını inceleyeceğiz">
+</head>
+<body>
+
+<h1>Tablo Nasıl oluşturulur?</h1>
+<p>Tablo oluşutrmak için kullanılması gereken etiket table dir. Açılış ve kapanış arasına gelecek olan ilk etiket tr dir. <br>tr etiketi bir satırı temsili ediyor açılımı Table Row dur ve bu tr lerin içerisine kolonlar ıtemsil eden td ler geliyor.<br>
+Kaç tane td eklersem o satırı o sayıda kolona bölmüş oluyorum.</p>
+<table border="1" width="50%">
+  <thead>
+  <!-- Tablonun başına başlık ekleme -->
+      <tr>
+        <th>Kurs Adı</th>
+        <th>Kurs Saati</th>
+        <th>Ders adeti</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!--table Row-->
+        <tr>
+          <!--Table data  -->
+          <td>Komple Web Geliştirme Eğitimi</td>
+          <td>45</td>
+          <td>300</td>
+        </tr>
+
+        <tr>
+          <td>Core 2 Mvc Eğitimi : Sıfırdan İleri Seviyeye</td>
+          <td>30</td>
+          <td>200</td>
+        </tr>
+
+        <tr><!-- colspan n tane kolonu birleştirmeyi sağlar. aşağıda 3 kolonu birleştirip sadece birşey yazdık.-->
+          <td colspan="3">Core 2 Mvc Eğitimi : Sıfırdan İleri Seviyeye</td>
+        </tr>
+    </tbody>
+</table>
+<hr><hr><hr>
+<table border="1" width="50%">
+  <thead>
+    <tr>
+      <th>Kurs Adı</th>
+      <th>Kurs Saati</th>
+      <th>Ders Adeti</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kople Web Geliştirme Eğitimi</td>
+      <td>45</td>
+      <td>300</td>
+    </tr>
+
+    <tr>
+      <td>Core 2 Mvc Eğitimi : Sıfırdan ileri Seviyeye</td>
+      <td>30</td>
+      <td rowspan="2">200</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">Core 2 Mvc Eğitimi : Sıfırdan ileri Seviyeye</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr><hr><hr>
+
+<table border="1" width="40%">
+  <thead>
+    <tr>
+      <th>Kurs Adı</th>
+      <th>Kurs Saati</th>
+      <th>Ders Adeti</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr >
+      <td>Kople Web Geliştirme Eğitimi</td>
+      <td rowspan="3" >40</td>
+      <td>300</td>
+    </tr>
+
+    <tr>
+      <td rowspan="2">Core 2 Mvc Eğitimi</td>
+      <td>450</td>
+    </tr>
+
+    <tr>
+      <td>500</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</body>
+</html>

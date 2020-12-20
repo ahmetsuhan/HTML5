@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Div-Span</title>
+  <meta name="title" content="Din-Span">
+  <meta name="keywords" content="div,span,Div-Span">
+  <meta name="description" content="Bu dölümde html te oldukça fazla kullanacağımız Div ve Span incelemesi yapıcaz.">
+</head>
+<body>
+
+  <h1>Neden Div Kullanılır? </h1>
+  <p>Sayfa içerisindeki elemanları gruplamak için Div kullanırız. Örneğim sayfanın üstünde bulunan bir menüyü, sayfanmın altında bulunan bir sayfa hakkındaki açıklamayı,sayfa içeriği, sol taraftaki menü gibi kısımları <br>
+  html'de biz bölümlere ayırıp div'ler le gruplamamız gerekiyor. Grupladığımız elemanlara aynı özellikleri kazandırabiliriz.</p>
+  <p>Div blok etikettir.</p>
+  <hr>
+
+  <div id="header">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui, libero ratione laboriosam quod accusamus consequuntur vero natus veritatis consequatur minima magni ab, repellat soluta maiores ipsam illum quam voluptas.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo magnam quod ad laudantium quas ipsum officiis molestiae culpa ea corporis amet, vitae accusamus nesciunt, nostrum harum excepturi. Ad, possimus, aspernatur.</p>
+  </div>
+
+  <hr>
+
+  <h1>Span nedir? </h1>
+  <p>Span bir blok etiket değildir. Seçiceğimiz belirli ögelere belirli özellikler eklemek için span kullanabilriiz. Div i kullanarakta çevreleme işlemi yapılmış oluyor fakat aralarındaki fark span bir inline etiket yani işi bitince bir alt satıra geçmiyor.<br>
+  Blok bir etiket gibi bulunduğu satırı kaplamıyor ama Div etiketi satırı olduğu gibi kaplayan bir blok etiket.<br>
+Neden yazıları gruplamak isteriz? </p>
+
+
+<div id="header">
+  <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, <span style="color:red;">consectetur</span>  adipisicing elit. Amet qui, libero ratione laboriosam quod accusamus consequuntur vero natus veritatis consequatur minima magni ab, repellat soluta maiores ipsam illum quam voluptas.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo magnam quod ad laudantium quas ipsum officiis molestiae culpa ea corporis amet, vitae accusamus nesciunt, nostrum harum excepturi. Ad, possimus, aspernatur.</p>
+</div>
+<hr><hr>
+<div id="header">
+  <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, <span style="color:red;">consectetur</span>  adipisicing elit. Amet qui, libero ratione laboriosam quod accusamus consequuntur vero natus veritatis consequatur minima magni ab, repellat soluta maiores ipsam illum quam voluptas.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo magnam quod ad laudantium quas ipsum officiis molestiae culpa ea corporis amet, vitae accusamus nesciunt, nostrum harum excepturi. Ad, possimus, aspernatur.</p>
+</div>
+
+<div id="menu">
+menu
+</div>
+
+<div id="content">
+content
+</div>
+
+<div id="footer">
+footer
+</div>
+
+
+</body>
+</html>

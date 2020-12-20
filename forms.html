@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formlar</title>
+  <meta name="title" content="Formalar">
+  <meta name="keywords" content="Form,forms">
+  <meta name="description" content="Bu bölümde Formlar hakkında bilgiler edineceğiz.">
+</head>
+<body>
+
+  <h1>Bir form nasıl oluşturulur?</h1>
+  <p>form etiketi kullanılarak form oluşturulur</p>
+
+<p>form kullanımına bir örnek:</p>
+<form>
+  <p>Ad:<input type="text"></p>
+  <p>Soyad:<input type="text"></p>
+  <p>Beni Hatırla <input type="checkbox"></p>
+
+  <p>
+     Erkek <input type="radio" name="Cinsiyet">
+     Kadın <input type="radio" name="Cinsiyet">
+  </p>
+
+  <p>
+      Hobiler <br>
+      Sinema<input type="checkbox">
+      Spor <input type="checkbox">
+      Kitap Okumak <input type="checkbox">
+  </p>
+
+  <p>
+      <select>
+        <option> Kocaeli</option>
+        <option>İstanbul</option>
+        <option> Ankara</option>
+
+      </select>
+  </p>
+
+
+  <p>
+    <select multiple>
+      <option>Kocaeli</option>
+      <option>İstanbul</option>
+      <option>Ankara</option>
+    </select>
+  </p>
+</form>
+<hr>
+<hr>
+
+<form action="/Home/Register">
+  <p>Ad:<input type="text" name = "ad" placeholder="Adınızı giriniz" required></p>
+  <p>Soyad:<input type="text" name="soyad" placeholder="Soyadınızı giriniz" required></p>
+  <p>Eposta <input type="email" name="eposta" placeholder="example@hotmail.com" required></p>
+  <p>Beni Hatırla <input type="checkbox" name="beniHatirla"></p>
+  <p>Erkek:<input type="radio" name="cinsiyet"> Kadın:<input type="radio" name="cimsiyet"></p>
+  <p>Hobiler <br>
+    Sinema:<input type="checkbox" name="hobi">
+    Spor:<input type="checkbox" name="hobi">
+    Kitap Okumak:<input type="checkbox" name="hobi">
+  </p>
+
+  <p>
+      <select name = "sehir">
+        <option>Kocaeli</option>
+        <option>İstanbul</option>
+        <option>Ankara</option>
+      </select>
+  </p>
+
+  <p>
+
+    <select multiple name="sehirler">
+      <option>İstanbul</option>
+      <option>Kocaeli</option>
+      <option>Ankara</option>
+    </select>
+  </p>
+
+<p>
+  Tarih giriniz:<input type="date" name="tarih">
+</p>
+<p>Tarih:<input type="datetime" name="tarih" placeholder="01/01/1997"></p>
+
+<p>Local Tarih <input type="datetime-local" name="tarih"></p>
+
+<p>Dosya seçiniz:<input type="file" name="dosya"></p>
+
+<p>hidden: ? bunu çözemedim. <input type="hidden" name="hidden"></p>
+
+<p>input type image olana bak birdaha araştır!!!</p>
+
+<p>Month: <input type="month" name="ay"></p>
+
+<p>Sayı: <input type="number" name="sayi" value="0"></p>
+<p>Sayı2: <input type="number" name="sayi" value="0" step="10" min="0" max="100"></p>
+
+<p>Şifre: <input type="password" name="sifre" required value="***************"></p>
+
+<p>Range: <input type="range" name="range" value="0" min="0" max="100"></p>
+
+<p>Search: <input type="search" name="search"></p>
+
+<p>tel : <input type="tel" name="tel" placeholder="554 xxx xx xx" ></p>
+
+<p>Time: <input type="time" name="time"></p>
+
+<p>url: <input type="url" name="url" placeholder="www.xxxxx.com"></p>
+
+<p>week: <input type="week" name="week"></p>
+
+<p>Color: <input type="color" name="color"></p>
+
+  <input type="reset" name="reset">
+  <input type="submit" value="Kaydet">
+
+</form>
+
+<hr>
+
+
+</body>
+</html>
