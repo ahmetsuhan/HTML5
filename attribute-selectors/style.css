@@ -1,0 +1,56 @@
+p[title]{
+  border : 1px solid gray;
+  padding: 5px;
+}
+p[title="third paragraph"]{
+  background-color: gold;
+}
+p[title ="fourth paragraph"]{
+  background-color: purple;
+}
+
+/* Başlangıcında https olanları kırmızı yapacak.*/
+a[href^="https"]
+{
+  color:red;
+}
+
+/*etiketin sonu com ile bitenleri pembe yapacak. */
+a[href$="com"]
+{
+  color:pink;
+}
+
+/* hem href etiketi hem target etiketi bunlar olanları yeşil yapacak*/
+a[href="https://example.net"][target="_blank"]{
+  color : green;
+}
+
+input{
+  display: block;
+  width: 150px;
+}
+input[type="text"]{
+  display: inline-block;
+  width: 300px;
+  background-color: red;
+}
+input[type="button"]
+{
+  background: #4CAF50;
+  color:#FFFFF;
+  padding:8px 16px;
+  border-radius: 20px;
+}
+
+
+/*
+  Note:
+  p[title ="fourth paragraph"]{
+    background-color: purple;
+  }
+  yukarıdaki kullanım yerine
+  p[title~="fourth"]{
+      background-color: purple;
+  } bunu yazmış olsaydık. içerisinde fourth geçenlerin arkaplanını mor yapacaktı.
+*/

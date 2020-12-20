@@ -1,0 +1,12 @@
+#section-one{
+  color:blue;
+  background-color: aquamarine;
+  width: 25%;
+  height: 100px;
+  overflow: scroll;
+}
+#section-two{
+  color:brown;
+  background-color: beige;
+  width: 300px;
+}

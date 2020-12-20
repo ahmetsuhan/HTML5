@@ -1,0 +1,6 @@
+h2{
+  color: #ddd155;
+}
+p{
+  background-color: rgba(255, 99 , 71, 0.1); /*a alpha değeri. 0-1 arasında */
+}
