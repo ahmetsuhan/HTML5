@@ -1,0 +1,90 @@
+/* Pseudo Seşlectors
+
+1-) Pseudo Elements
+  -herhnagi bi paragrafın örneğin ilk harfini yada satırını yani bir elemanın bir parçasını seçmek istediğimizde bunları
+2-) Pseudo Class
+  - Bir kapsam içerisindeki örneğin ul etiketi içerisindeki li leri seçmek istediğimizde bunu kullanıyoruz.
+
+ */
+
+/* Pseudo Elements*/
+p::first-line{
+  font-weight: bold;
+  color:brown;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+p.about::first-line{
+  color:green;
+}
+p::first-letter{
+  font-size: 48px;
+}
+p::before
+{
+  content: "";
+  display: block;
+  background-color: yellow;
+  padding: 10px;
+}
+p::after
+{
+  content: "";
+  display: block;
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* Pseudo Class*/
+ul li{
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+ul li:first-child{
+  background-color: red;
+  display: inline-block;
+}
+ul li:last-child{
+  background-color: red;
+}
+ul li:nth-of-type(even){
+  border:2px solid cyan;
+}
+ul li:nth-of-type(odd)
+{
+  border:2px solid blue;
+}
+
+a{
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+  width: 80px;
+  border : 1px gray solid;
+  margin-bottom: 10px;
+}
+a:link{
+  color:red;
+}
+a:visited{
+  color:purple;
+}
+a:hover{
+color:white;
+background-color: green;
+}
+a:active
+{
+color:green;
+background-color: gold;
+}
+span{
+  display: none;
+  background: yellow;
+  padding: 20px;
+}
+div:hover span{
+  display: block;
+}
