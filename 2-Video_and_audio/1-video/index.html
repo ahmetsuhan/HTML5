@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video & Audio</title>
+</head>
+
+<body>
+    <h1>Playing a Video</h1>
+    <video src="../videos/video1.mp4" controls width="400" loop autoplay></video>
+    <!-- if the controls command off, there is no control option such as play, prev, retry...-->
+    <!-- autoplay: may not run on some browsers.-->
+
+    <!-- Different browser Support-->
+    <video width="50" height="50" controls>
+        <source src="../../video.mp4" type="video/mp4">
+        <source src="../../video.ogg" type="video/ogg">
+        <source src="../../video.webm" type="video/webm">
+    </video>
+
+</body>
+
+</html>

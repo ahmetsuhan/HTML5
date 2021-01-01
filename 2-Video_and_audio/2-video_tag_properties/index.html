@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video & Audio</title>
+</head>
+
+<body>
+
+    <!-- 
+
+        The most using attributes for <video> tag 
+            *src = video address
+            *height: video height
+            *width: video width
+            *autoplay: Video starts playing when the page opens
+            *controls: It makes control button visible
+            *loop : keeps the video running continuously
+            *preload :When the page opens video starts downloading without pressing the play button
+            *muted : It makes video sound turned off
+
+    -->
+
+
+    <h1>Video Tag Prop</h1>
+    <video src="../videos/video1.mp4" controls width="400" loop autoplay></video>
+    <!-- if the controls command off, there is no control option such as play, prev, retry...-->
+    <!-- autoplay: may not run on some browsers.-->
+
+    <!-- Different browser Support-->
+    <video width="50" height="50" controls preload>
+        <source src="../../video.mp4" type="video/mp4">
+        <source src="../../video.ogg" type="video/ogg">
+        <source src="../../video.webm" type="video/webm">
+    </video>
+
+</body>
+
+</html>
