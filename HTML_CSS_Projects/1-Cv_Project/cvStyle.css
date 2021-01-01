@@ -1,0 +1,245 @@
+/* Deneme amaçlı yazılanlar*/
+
+
+/*
+.border{
+    border:1px solid purple;
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    ;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.box {
+    /*height:200px;*/
+    /*border:1px solid red;*/
+}
+
+.w-3 {
+    width: 33.333333333%;
+}
+
+
+/*margin bottom */
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+
+/*margin right */
+
+.me-1 {
+    margin-right: .5rem;
+}
+
+.me-2 {
+    margin-right: 1rem;
+}
+
+
+/*margin start */
+
+.ms-1 {
+    margin-left: .5rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.d-flex {
+    display: flex;
+    ;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-s {
+    align-items: end;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+
+/* En üstteki mavi kısımlar için*/
+
+.blue-box {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(57, 63, 119);
+}
+
+
+/*Header */
+
+.content-group {
+    padding-left: .1rem;
+    box-shadow: 2px 2px 8px 4px;
+    transition: all 0.3s ease 2ms;
+}
+
+.content-group:hover {
+    box-shadow: 0 2px 4px .5px;
+}
+
+
+/*Header left box  */
+
+#leftBox h1 {
+    font-size: 2rem;
+    transition: all 0.3s ease 2ms;
+}
+
+#leftBox .header {
+    margin-bottom: 1rem;
+    padding-left: .1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 2px 4px .5px;
+    transition: all 0.3s ease 2ms;
+}
+
+#leftBox .header:hover {
+    background-color: lightskyblue;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+/*center box  */
+
+#center-box {
+    position: relative;
+}
+
+.personal-img-box {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-img-box img {
+    max-width: 100%;
+    height: 20rem;
+    border-radius: 50%;
+    transition: all 0.3s ease 2ms;
+}
+
+.personal-img-box img:hover {
+    box-shadow: 0 2px 4px .5px;
+}
+
+.deneme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.deneme .icon {
+    order: 1;
+}
+
+#rightBox .container {
+    flex-wrap: wrap;
+}
+
+
+/* section personal infos*/
+
+#personal-infos .container {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.card {
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 8px 4px;
+    transition: all 0.3s ease 2ms;
+}
+
+.card:hover {
+    box-shadow: 0 2px 4px .5px;
+}
+
+.card-header {
+    margin-bottom: 1rem;
+}
+
+#personal-infos h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card-body {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content {
+    padding-top: .5rem;
+}
+
+.card-icon img {
+    width: 50px;
+    max-width: 100%;
+}
