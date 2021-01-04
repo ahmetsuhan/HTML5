@@ -1,0 +1,263 @@
+/*delete all space */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-width: 35rem;
+}
+
+
+/*Margin bottom */
+
+.mb-1 {
+    margin-bottom: .5rem;
+}
+
+
+/*clearfix  */
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/*container */
+
+#container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 1rem 1rem;
+    border: 1px solid;
+}
+
+
+/*banner */
+
+#banner {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+
+
+/* banner --> logo*/
+
+#logo {
+    width: 10rem;
+    height: 8rem;
+    background-color: #fff;
+    float: left;
+}
+
+#logo img {
+    width: 10rem;
+    height: 8rem;
+}
+
+
+/* Social*/
+
+#social {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    float: right;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    transform: translate(0%, -100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#social a {
+    margin-left: 1rem;
+}
+
+
+/*Main menu */
+
+#mainMenu {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    /*margin: auto;*/
+}
+
+#mainMenu ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mainMenu li {
+    margin-left: .2rem;
+    border: 1px solid gold;
+}
+
+#mainMenu li a {
+    font-weight: bold;
+    flex-grow: 1;
+    transition: all 0.3s ease 2ms;
+}
+
+#mainMenu li a:hover {
+    background-color: #fff;
+    color: steelblue;
+}
+
+#mainMenu li a:active {
+    color: red;
+}
+
+#mainMenu li a:visited {
+    color: purple;
+}
+
+
+/*sectionA */
+
+#sectionA {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    flex-grow: 3;
+    padding: 1rem;
+    border-right: 1px solid;
+}
+
+#content h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.content-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 16px 2px;
+    transition: all 0.3s ease 2ms;
+}
+
+.content-item:hover {
+    box-shadow: 2px 2px 16px 6px;
+}
+
+.img-container {
+    width: 10rem;
+}
+
+.img-container img {
+    width: 10rem;
+}
+
+.content-text-container {
+    max-height: 10rem;
+    overflow-y: scroll;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+.content-text-container:hover {
+    background-color: #f2f2f2;
+}
+
+#sideMenu {
+    flex-grow: 2;
+    padding: 1rem;
+}
+
+.sideMenuItem {
+    max-height: 10rem;
+    margin-bottom: 1rem;
+    overflow-y: scroll;
+}
+
+
+/*Footer */
+
+#bottomMenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#bottomMenu ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+#bottomMenu li {
+    display: inline-block;
+}
+
+#bottomMenu a {
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    transition: all 0.3s ease 2ms;
+    ;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+#bottomMenu a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.footerText {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footerText p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) {
+    #mainMenu ul {
+        justify-content: flex-end;
+    }
+    #mainMenu li a {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    html {
+        font-size: 1.6rem;
+    }
+    #mainMenu ul {
+        justify-content: center;
+    }
+}
